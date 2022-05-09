@@ -19,6 +19,10 @@
     --nav-height: 7.2rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     width: 100%;
@@ -210,4 +214,42 @@ body.menuExpanded .logo,
 body.menuExpanded .closeMenu {
     position: relative;
     z-index: 100;
+}
+
+/* ================SOBRE=============== */
+
+#sobre {
+    background-color: var(--white-color);
+    text-align: left;
+}
+
+.titleSobre {
+    font-weight: 700;
+    font-size: 3.0rem;
+    line-height: 3.7rem;
+    color: var(--blue-color);
+
+    margin-top: 2.3rem;
+}
+
+.elementSobre {
+    width: 12.7rem;
+    height: 0.8rem;
+
+    background: var(--orange-color);
+    border-radius: 1rem;
+
+    margin-top: 1.4rem;
+    margin-bottom: 2.2rem;
+}
+
+.textSobre {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    color: var(--blue-color);
+}
+
+.textSobre span {
+    color: var(--orange-color);
 }
