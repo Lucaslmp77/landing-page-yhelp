@@ -248,8 +248,116 @@ body.menuExpanded .closeMenu {
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--blue-color);
+
+    padding-bottom: 6.1rem;
 }
 
 .textSobre span {
     color: var(--orange-color);
+}
+
+/* ================QUEM SOMOS ?=============== */
+
+#quemSomos .wrapper h1 {
+    font-weight: 700;
+    font-size: 3.0rem;
+    line-height: 3.7rem;
+    color: var(--white-color);
+
+    margin-top: 4.2rem;
+    margin-bottom: 2.3rem;
+}
+
+.textQuemSomos{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--white-color);
+
+    margin-bottom: 5.0rem;
+}
+
+.integrantesYhelp {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--white-color);
+
+    padding-bottom: 2rem; 
+}
+
+.imgYhelp {
+    padding-top: 0.5rem;
+}
+
+/* ================FALE CONOSCO=============== */
+#faleConosco {
+    background-color: var(--white-color);
+}
+
+#faleConosco .wrapper h1{
+    font-weight: 700;
+    font-size: 3.0rem;
+    line-height: 3.7rem;
+    color: var(--blue-color);
+
+    padding-block: 2.8rem;
+}
+
+#faleConosco .wrapper fieldset {
+    border: none;
+}
+
+.containerFaleConosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.9rem;
+    width: 32.6rem;
+    height: 60rem;
+    background: #EEEEEE;
+    border-radius: 16px;
+
+    margin-bottom: 5rem;
+}
+
+.first {
+    margin-top: 1.1rem;
+}
+
+.campo {
+    width: 30rem;
+    height: 5rem;
+
+    background: #FFFFFF;
+    border: 0.1rem solid #E67F0D;
+    border-radius: 1.6rem;
+
+    padding: 0rem 0rem 0.3rem 0.5rem;
+}
+
+.campoMensagem {
+    width: 30rem;
+    height: 24.3rem;
+    border: 0.1rem solid #E67F0D;
+    border-radius: 1.6rem;
+    padding: 0rem 0rem 20rem 0.5rem;
+}
+
+.botaoEnviar {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--orange-color);
+
+    width: 17rem;
+    height: 6rem;
+
+    border: 0.2rem solid #E67F0D;
+    border-radius: 1.6rem;
+    margin-top: 5rem;
+}
+
+.imagemFaleConosco {
+    margin-bottom: 3rem;
 }

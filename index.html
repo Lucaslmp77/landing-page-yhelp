@@ -17,8 +17,8 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a onclick="closeClick()" href="#sobre">Sobre</a></li>
-                        <li><a href="#">Quem somos ?</a></li>
-                        <li><a href="#">Fale conosco</a></li>
+                        <li><a onclick="closeClick()" href="#quemSomos">Quem somos ?</a></li>
+                        <li><a onclick="closeClick()" href="#faleConosco">Fale conosco</a></li>
                     </ul>
                     <button class="botaoMenuHome">Cadastre-se agora</button>
                     <ul class="socialLinks">
@@ -61,6 +61,30 @@
                     <p class="textSobre">Acreditamos que a solidariedade é o combustível para mudar o mundo. Com o uso da tecnologia, podemos conectar doadores à donatários de todos os lugares do Brasil e transformar vidas. Yhelp é uma plataforma destinada a qualquer pessoa que queira fazer ou solicitar uma doação, para começar basta se <a href="#"><span>cadastrar</span></a> em nossa plataforma, assim, você terá acesso à anúncios publicados de outros usuários. Doar nunca ficou tão prático. Ajude milhares de pessoas. 
                     </p>
                 </article>
+            </div>
+        </section>
+        <section id="quemSomos">
+            <div class="wrapper">
+                <h1>QUEM SOMOS ?</h1>
+                <p class="textQuemSomos">Somos uma equipe formada por quatro integrantes motivados a desenvolver soluções para problemas da comunidade em geral, com o objetivo de contribuir para a sociedade ao mesmo tempo que desenvolvemos experiência no ramo da programação.</p>
+                <img class="imgYhelp" src="img/Quem somos - imagem.png" alt="imagem grupo yhelp">
+                <p class="integrantesYhelp">Lucas Mendes Pereira, João Guilherme Schulz, Renan Montado, Allyson Menezes.</p>
+            </div>
+        </section>
+        <section id="faleConosco">
+            <div class="wrapper">
+                <h1>FALE CONOSCO</h1>
+                <fieldset>
+                    <div class="containerFaleConosco">
+                        <input class="campo first" placeholder="Nome*" type="name" id="name">
+                        <input class="campo" placeholder="Email*" type="email" id="email">
+                        <input class="campo" placeholder="Assunto*" type="text">
+                        <input class="campoMensagem" placeholder="Digite sua mensagem aqui*" type="text">
+                        <button class="botaoEnviar">Enviar</button>
+                    </div>
+                    <img class="imagemFaleConosco" src="img/Fale conosco - imagem.png" alt="imagem fale conosco">
+                </fieldset>
+            </form>
             </div>
         </section>
         <script src="main.js"></script>
