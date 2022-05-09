@@ -146,6 +146,7 @@ body.menuExpanded > :not(nav) {
 body .menuExpanded .openMenu {
     opacity: 0;
     visibility: hidden;
+    position: fixed;
 }
 
 body.menuExpanded .menu,
