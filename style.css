@@ -65,8 +65,6 @@ header {
 }
 
 .tituloHome {
-    width: 32.6rem;
-
     font-size: 3.2rem;
     line-height: 3.9rem;
     color: var(--white-color);
@@ -167,7 +165,7 @@ body.menuExpanded .menu {
     padding-top: var(--nav-height);
 }
 
-body.menuExpanded .nav {
+body.menuExpanded nav {
     position: relative;
 }
 
