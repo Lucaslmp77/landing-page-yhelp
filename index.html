@@ -7,13 +7,51 @@
         <link rel="stylesheet" href="style.css">
         <title>Yhelp</title>
     </head>
-    <body>
-        
-        <header>
-
-            
-
+    <body onscroll="onScroll()" class="">
+        <nav id="navigation" class="">
+            <div class="wrapper">
+                <a class="logo" href="#">
+                    <img src="img/Home - logo.png" alt="logo yhelp">              
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Quem somos ?</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                    </ul>
+                    <button class="botaoMenuHome">Cadastre-se agora</button>
+                    <ul class="socialLinks">
+                        <li><a target="_blank" href="#"><img src="img/home - face.png" alt="icone facebook"></a></li>
+                        <li><a target="_blank" href="#"><img src="img/Home - insta.png" alt="icone instagram"></a></li>
+                        <li><a target="_blank" href="#"><img src="img/Home - messenger.png" alt="icone messenger"></a></li>
+                    </ul>
+                </div>
+                <button
+                    onclick="clickMenu()"
+                    class="openMenu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button 
+                    onclick="closeClick()"
+                    class="closeMenu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </button>
+            </div>
+        </nav>
+        <header class="wrapper">
+            <h4 class="boasVindas">BOAS-VINDAS A Y.HELP 👋</h4>
+            <h1 class="tituloHome">A SOLIDARIEDADE É CONTAGIOSA, CONTAGIE E SE DEIXE CONTAGIAR</h1>
+            <p class="textoHome">Compartilhar com o próximo é o ato mais sincero de solidariedade que alguém pode fazer. Todo dia é dia de doar! Solidariedade não é dar o que sobra, é dar o que falta!</p>
+            <button class="botaoHome">Cadastre-se agora</button>
+            <img src="img/Home - imgHome.png" alt="Imagem animada doação">
         </header>
-
+        <script src="main.js"></script>
     </body>
 </html>

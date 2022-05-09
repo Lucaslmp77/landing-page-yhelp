@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 
+/* ======================GERAL===================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +15,199 @@
     --orange-color: hsl(32, 89%, 48%);
 
     font-size: 62.5%; /* 1rem = 10px */
+
+    --nav-height: 7.2rem;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
+    background-color: var(--blue-color);
+
+    text-align: center;
+    overflow: overlay;
+}
+
+.wrapper {
+    width: 37.5rem;
+
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ====================HEADER====================== */
+
+header {
+    width: 37.5rem;
+
+    margin-inline: auto;
+    margin-top: calc(3.5rem + var(--nav-height));
+}
+
+.boasVindas {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: hsl(240, 100%, 87%);
+}
+
+.tituloHome {
+    width: 32.6rem;
+
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+    color: var(--white-color);
+
+    margin-inline: auto;
+    margin-top: 1.9rem;
+}
+
+.textoHome {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--white-color);
+
+    margin-top: 1.2rem;
+}
+
+.botaoHome {
+    width: 24.5rem;
+    height: 6.1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--white-color);
+
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: var(--orange-color);
+
+    margin-top: 4.1rem;
+    margin-bottom: 4.1rem;
+}
+
+/* ========================NAVEGATION================= */
+
+nav {
+    display: flex;
+
+    height: var(--nav-height);
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.scroll  {
+    background: #020248;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ========================MENU-EXPANDED============== */
+body.menuExpanded  {
+    overflow: hidden;
+}
+
+body.menuExpanded > :not(nav) {
+    display: none;
+}
+
+.menu,
+.closeMenu,
+body .menuExpanded .openMenu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.menuExpanded .menu,
+body.menuExpanded .closeMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.menuExpanded .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:  #020248;
+
+    width: 100%;
+    height: 100vh;
+
+    padding-top: var(--nav-height);
+}
+
+body.menuExpanded .nav {
+    position: relative;
+}
+
+.menu ul:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 6rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+}
+
+.menu ul li a {
+    color: var(--white-color);
+}
+
+.menu .botaoMenuHome {
+    width: 24.5rem;
+    height: 6.1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--white-color);
+
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: var(--orange-color);
+
+    display: inline-block;
+
+    margin-top: 4.1rem;
+    margin-bottom: 7.8rem;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.6rem;
+}
+
+body.menuExpanded .logo,
+body.menuExpanded .closeMenu {
+    position: relative;
+    z-index: 100;
 }
